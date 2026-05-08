@@ -8,7 +8,7 @@
 ## 🌊 The Challenge
 How can we help naval operators spot **"Dark Vessels"** (suspicious ships with disabled AIS or abnormal trajectories) in the vastness of the ocean?
 
-Competing against 10 teams from IMT Atlantique, École Navale, and ENSTA Bretagne during this 24h hackathon, our team **PosAIdon** developed an operational decision-support dashboard that was rewarded for its tactical relevance and technical feasibility.
+Competing against 10 teams from IMT Atlantique, École Navale, and ENSTA during this 24h hackathon, our team **PosAIdon** developed an operational decision-support dashboard that was rewarded for its tactical relevance and technical feasibility.
 
 ## 💡 The Solution: Intelligence in Action
 Rather than just adding another data layer, we created an interactive tool that **fuses** and **analyzes** information for the operator:

@@ -1,6 +1,6 @@
 # PosAidon 🛰️
 
-**1st place — SPASEA 2025** · 24h hackathon organized by ENSTA Bretagne, Naval Group & DGA (Brest, December 2024)
+**1st place: SPASEA 2025** · 24h hackathon organized by ENSTA Bretagne, Naval Group & DGA (Brest, December 2024)
 
 The challenge: build an AI agent to help naval operators exploit AIS, RF, and satellite data tactically.
 
@@ -24,7 +24,7 @@ PosAidon is an interactive dashboard that lets operators track, analyze, and rep
 **Operator report (PDF)**
 - Generates a PDF report for the on-duty officer summarizing a vessel of interest
 - Includes: recent trajectory, speed history, suspicious behavior flags, current position, and vessel metadata
-- Designed to be actionable — one click, ready to hand off
+- Designed to be actionable: one click, ready to hand off
 
 **AI assistant**
 - Ask questions in natural language about any vessel in the dataset
@@ -35,11 +35,11 @@ PosAidon is an interactive dashboard that lets operators track, analyze, and rep
 
 ## Stack
 
-- **Python** — pandas, folium, ipywidgets
-- **AI agent** — LangChain, LangGraph, OpenRouter (Grok)
-- **Data** — AIS + RF + ephemerides via DAWEX Space Data Marketplace
-- **Map layers** — EMODnet, NOAA, GEBCO, Marine Regions
-- **Environment** — Google Colab
+- **Python**: pandas, folium, ipywidgets
+- **AI agent**: LangChain, LangGraph, OpenRouter (Grok)
+- **Data**: AIS + RF + ephemerides via DAWEX Space Data Marketplace
+- **Map layers**: EMODnet, NOAA, GEBCO, Marine Regions
+- **Environment**: Google Colab
 
 ---
 

@@ -59,4 +59,4 @@ Set your API keys in the config cell (OpenRouter, OpenWeather, DAWEX credentials
 
 | | | | | |
 |---|---|---|---|---|
-| [@Metimer](https://github.com/Metimer) | [@Chakibprojects](https://github.com/Chakibprojects) | @contributor3 | @contributor4 | @contributor5 |
+| [Sei BAYLE](https://github.com/sei22) | [Juliette FAURIE](https://github.com/juliettefaurie) | @contributor3 | @contributor4 | @contributor5 |

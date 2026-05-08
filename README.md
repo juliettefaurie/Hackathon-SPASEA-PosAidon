@@ -58,5 +58,4 @@ Set your API keys in the config cell (OpenRouter, OpenWeather, DAWEX credentials
 ## Contributors
 
 | | | | | |
-|---|---|---|---|---|
 | [Sei BAYLE](https://github.com/sei22) | [Juliette FAURIE](https://github.com/juliettefaurie) | Charbel DIB | Axel GRUYEZ | 

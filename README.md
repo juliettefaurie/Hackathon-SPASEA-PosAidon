@@ -1,10 +1,6 @@
 # PosAIdon - Augmented Naval Assistant (LLM & Data Fusion)
 **1st Prize Winner - SPASEA Hackathon (Naval Group / DGA)**
 
-![Badge Victoire](https://img.shields.io/badge/Award-1st%20Prize-gold?style=for-the-badge)
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
-![IA](https://img.shields.io/badge/AI-LLM%20%26%20RAG-red?style=for-the-badge)
-
 ## The Challenge
 How can we help naval operators spot **"Dark Vessels"** (suspicious ships with disabled AIS or abnormal trajectories) in the vastness of the ocean?
 

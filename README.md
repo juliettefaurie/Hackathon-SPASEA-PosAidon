@@ -1,58 +1,58 @@
-# PosAidon 🛰️
+# 🔱 PosAIdon - Augmented Naval Assistant (LLM & Data Fusion)
+**🏆 1st Prize Winner - SPASEA Hackathon (Naval Group / DGA)**
 
-**1st place: SPASEA 2025** · 24h hackathon organized by ENSTA, Naval Group & DGA (Brest, December 2024)
+![Badge Victoire](https://img.shields.io/badge/Award-1st%20Prize-gold?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![IA](https://img.shields.io/badge/AI-LLM%20%26%20RAG-red?style=for-the-badge)
 
-The challenge: build an AI agent to help naval operators exploit AIS, RF, and satellite data tactically.
+## 🌊 The Challenge
+How can we help naval operators spot **"Dark Vessels"** (suspicious ships with disabled AIS or abnormal trajectories) in the vastness of the ocean?
 
----
+Competing against 10 teams from IMT Atlantique, École Navale, and ENSTA Bretagne during this 24h hackathon, our team **PosAIdon** developed an operational decision-support dashboard that was rewarded for its tactical relevance and technical feasibility.
 
-## What it does
+## 💡 The Solution: Intelligence in Action
+Rather than just adding another data layer, we created an interactive tool that **fuses** and **analyzes** information for the operator:
 
-PosAidon is an interactive dashboard that lets operators track, analyze, and report on vessel behavior in the Mediterranean.
+1. **Multi-source Data Fusion & Tracking**: Real-time cross-referencing of AIS signals, Radio Frequency (RF) signatures, and satellite ephemerides to detect what is invisible to the naked eye. Features a live map with animated trajectory replays.
+2. **Suspicion Detection**: Flags vessels with abnormal speeds (drifting, unexpectedly stopped), detects RF signals with no corresponding AIS (classic dark vessel pattern), and scores vessels based on behavioral anomalies to identify potential spoofing.
+3. **Intelligent Tactical Assistant**: An AI agent allowing operators to query the tactical situation in natural language (e.g., *"Is vessel MMSI 227XXXXXX behaving normally?"* or *"Which vessels have no AIS in this zone?"*).
+4. **Operator Report (PDF)**: One-click PDF report generation summarizing a vessel of interest (history, anomalies, current position) ready to be handed off to the on-duty officer.
 
-**Vessel tracking**
-- Live map with 35+ layers (bathymetry, EEZ zones, vessel density, sea temperature, satellite imagery...)
-- Overlay RF detections from Unseenlabs satellites and CNES satellite trajectories
-- Select one or several vessels and replay their full trajectory with an animated timeline
+## 🛠️ Tech Stack
+* **Languages & Core**: Python (pandas, pyarrow, requests, ipywidgets)
+* **AI Agent**: LangChain, LangGraph, OpenRouter API (Grok / GPT)
+* **Mapping**: **Folium** & Geopy (35+ maritime layers including EMODnet, NOAA, GEBCO, Marine Regions, bathymetry, EEZ, etc.)
+* **Data Integration**: Ingestion via **Dawex** API (Space Data Marketplace)
+* **Data Partners**: Unseenlabs (RF), Prométhée (Sat), CNES
+* **Environment**: Jupyter / Google Colab
 
-**Suspicion detection**
-- Flags vessels with abnormal speed (too fast, drifting, or stopped unexpectedly)
-- Detects vessels emitting an RF signal with no corresponding AIS — a classic dark vessel pattern
-- Cross-references AIS positions with RF detections to identify potential spoofing or evasion
-- Scores vessels based on behavioral anomalies and highlights them on the map
+## 📸 Project Overview
+<p align="center">
+  <img src="Assets/Screenshot 2025-12-05 11.11.55.png" width="45%" alt="Tactical Map View">
+  <img src="Assets/Screenshot 2025-12-05 12.54.08.png" width="45%" alt="AI Assistant Interface">
+</p>
+<p align="center"><i>Tactical map view and natural language conversational interface.</i></p>
 
-**Operator report (PDF)**
-- Generates a PDF report for the on-duty officer summarizing a vessel of interest
-- Includes: recent trajectory, speed history, suspicious behavior flags, current position, and vessel metadata
-- Designed to be actionable: one click, ready to hand off
+## 📂 Repository Structure
+* `/Notebook/` : The core analysis (Python Notebook) including data fusion pipelines and the AI agent logic.
+* `/Assets/` : Screenshots and visual demonstrations of the project.
+* `requirements.txt` : Required dependencies to run the project.
 
-**AI assistant**
-- Ask questions in natural language about any vessel in the dataset
-- The agent (LangChain/LangGraph + GPT) queries live data before answering
-- Examples: *"Is vessel MMSI 227XXXXXX behaving normally?"*, *"Which vessels have no AIS in this zone?"*
+## 🚀 Getting Started & Security
+This project uses environment variables to securely manage API keys.
 
----
-
-## Stack
-
-- **Python**: pandas, folium, ipywidgets
-- **AI agent**: LangChain, LangGraph, OpenRouter (Grok)
-- **Data**: AIS + RF + ephemerides via DAWEX Space Data Marketplace
-- **Map layers**: EMODnet, NOAA, GEBCO, Marine Regions
-- **Environment**: Google Colab
-
----
-
-## Getting started
-
-```bash
-pip install langchain langchain-openai langgraph folium ipywidgets geopy pandas pyarrow
-```
-
-Set your API keys in the config cell (OpenRouter, OpenWeather, DAWEX credentials), then run the notebook top to bottom.
-
-> The `.parquet` data files are not included — they were provided under the hackathon's data agreement.
-
+1. **Clone the repo**:
+   ```bash
+   git clone [https://github.com/sei22/Hackathon-SPASEA-PosAIdon.git](https://github.com/sei22/Hackathon-SPASEA-PosAIdon.git)
+   ```
+2. **Install dependencies**
+3. **Set up your environment**:
+  Create a `.env` file at the root of the project with your API credentials:
+  ```bash
+  DAWEX_CLIENT_ID=your_id
+  DAWEX_CLIENT_SECRET=your_secret
+  OPENROUTER_API_KEY=your_key
+  ```
 ---
 
 ## Contributors

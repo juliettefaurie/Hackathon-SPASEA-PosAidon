@@ -1,5 +1,5 @@
 # PosAIdon - Augmented Naval Assistant (LLM & Data Fusion)
-** 1st Prize Winner - SPASEA Hackathon (Naval Group / DGA)**
+**1st Prize Winner - SPASEA Hackathon (Naval Group / DGA)**
 
 ![Badge Victoire](https://img.shields.io/badge/Award-1st%20Prize-gold?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)

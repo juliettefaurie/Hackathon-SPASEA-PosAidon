@@ -28,7 +28,7 @@ PosAidon is an interactive dashboard that lets operators track, analyze, and rep
 
 **AI assistant**
 - Ask questions in natural language about any vessel in the dataset
-- The agent (LangChain/LangGraph + Grok) queries live data before answering
+- The agent (LangChain/LangGraph + GPT) queries live data before answering
 - Examples: *"Is vessel MMSI 227XXXXXX behaving normally?"*, *"Which vessels have no AIS in this zone?"*
 
 ---

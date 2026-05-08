@@ -1,6 +1,6 @@
 # PosAidon 🛰️
 
-**1st place: SPASEA 2025** · 24h hackathon organized by ENSTA Bretagne, Naval Group & DGA (Brest, December 2024)
+**1st place: SPASEA 2025** · 24h hackathon organized by ENSTA, Naval Group & DGA (Brest, December 2024)
 
 The challenge: build an AI agent to help naval operators exploit AIS, RF, and satellite data tactically.
 

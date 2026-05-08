@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Assets/logo_hackathon.png" width="200" alt="Logo PosAIdon">
+</p>
+
 # 🔱 PosAIdon - Augmented Naval Assistant (LLM & Data Fusion)
 **🏆 1st Prize Winner - SPASEA Hackathon (Naval Group / DGA)**
 
